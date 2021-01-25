@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>LepseyEditor</title>
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/styleEditor.css">
+		<script type="text/javascript" src="scripts/general.js"></script>
+		<script type="text/javascript" src="scripts/serverScript.js"></script>
+		<script type="text/javascript" src="scripts/animationScript.js"></script>
+		<script type="text/javascript" src="scripts/editorScript.js"></script>
+		<script type="text/javascript" src="scripts/mdScript.js"></script>
+		<script type="text/javascript" src="scripts/editorOnload.js"></script>
+		
+		
+	</head>
+	<body>
+		<div id="header">
+			<div id="headerName">
+				<h1>LepseyNews</h1>
+			</div>
+			<div id="headerLogin">
+				<img id="headerLoginImg" src="source/inputLogin.png" alt="Entering">
+			</div>
+		</div>
+		<div id="LOGIN_B">
+			<div id="LOGIN">
+				<div class="label" id="errorLoginMessage">
+					
+				</div>
+				<div class="label">
+					Login
+				</div>
+				<div>
+					<input class="input" id="login" value="1234HER_TOBY"></input>
+				</div>
+				<div class="label">
+					Password
+				</div>
+				<div>
+					<input class="input" id="password" type="password" value="hyi_tam_plaval"></input>
+				</div>
+				
+				<div>
+					<button id="LOGIN_BUTTON" onclick="logIn()">
+						GO
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="UserInfo">
+			<div id="UserInfoData">
+				<div class="label" id="UserInfoIsAdmin"></div>
+
+				<div>
+					<div id="UserInfoImg"> <img id="UserInfoImgSrc" src="" alt="ava"></div>
+					<div class="label" id="UserInfoName"></div>
+				</div>
+				
+				<div>
+					<button id="LOGOUT_BUTTON" onclick="logOut()">
+						выйти
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="creatorNews">
+			<div id="newsName">
+				<div class="label W3 L">Название новости (10-20 символов)</div>
+				<div class="W6 L">
+					<input class="input" id="newsNameIn"></input>
+				</div>				
+			</div>
+			
+			<div id="newsDescription">
+				<div class="label W3 M">Описание новости (50-255 символов)</div>
+				<div class="W9 M">
+					<textarea class="fullInput" id="newsDescriptionText"></textarea>
+				</div>				
+			</div>
+			
+			<div id="newsPhoto">
+				<div class="label W3 L">Фото новости(превью)</div>
+				<div class="W3 L">
+					<input id="imageAdd" type="file" onchange="selectImage(document.getElementById('newsImage'))" multiple="false">
+				</div>
+				<div class="W3 L">
+					<img class="photo" id="newsImage" alt="Фото нет" src="">
+				</div>
+			</div>
+			
+			<div id="newsType">
+				<div class="label W3 L">Категория новости</div>
+				<div class="W6 L">
+					<select class="controlElementEditorSelect" id="newsTypeSelect">
+						<option>Политика</option>
+						<option>Экономика</option>
+						<option>Спорт</option>
+						<option>Общество</option>
+					</select>
+				</div>				
+			</div>
+			
+			<div id="newsEditorBody">
+				<div id="controlElementEditor">
+					<div id="blockBackForwardAction">
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('undo');">
+							<img src="source/undo.png">
+						</button>
+						
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('redo');">
+							<img src="source/redo.png">
+						</button>
+					</div>
+					
+					<div id="blockFamilieSizeText">
+						<select class="controlElementEditorSelect" name="FamilieText" onchange="EditorExecCommand('fontName', this.value);">
+						
+							<option>arial</option>
+							<option>arial black</option>
+							
+							<option>book antiqua</option>
+							<option>bookman old style</option>
+							
+							<option>calibri</option>
+							<option>cambria</option>
+							<option>candara</option>
+							<option>century gothic</option>
+
+							<option>colonna mt</option>
+							<option>comic sans ms</option>
+							<option>consolas</option>
+
+
+							<option>corbel</option>
+							<option>courier</option>
+							<option>cursive</option>
+							
+							<option>gabriola</option>
+							<option>garamond</option>
+
+							<option>georgia</option>
+
+							<option>helterskelter</option>
+							<option>helvetica</option>
+							<option>herman</option>
+							<option>highlight let</option>
+							<option>impact</option>
+							<option>jester</option>
+							<option>joan</option>
+							<option>jokerman let</option>
+							<option>kelt</option>
+							<option>kids</option>
+							<option>kino mt</option>
+							<option>la bamba let</option>
+							<option>latha</option>
+							<option>lithograph</option>
+							<option>lucida console</option>
+							<option>marlett</option>
+							<option>matteroffact</option>
+							<option>matisse itc</option>
+							<option>mekanik let</option>
+							<option>modern</option>
+							<option>monaco</option>
+							<option>monospace</option>
+							<option>monotype sorts</option>
+							<option>new york</option>
+							<option>nyala</option>
+							<option>orange let</option>
+							<option>palatino</option>
+							<option>playbill</option>
+
+							<option>sans-serif</option>
+							
+							
+							<option>segoe print</option>
+							<option>symbol</option>
+							<option>tahoma</option>
+							<option>tempus sans itc</option>
+							<option>times</option>
+							<option>trebuchet ms</option>
+							<option>verdana</option>
+							<option>wide latin</option>
+						</select>
+						<input  class="controlElementEditorInput" type="number" min="1" max="7" value="4" onchange="EditorExecCommand('fontSize', this.value);">
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('Bold');"> B </button>
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('Italic');"> I </button>
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('Underline');"> U </button>
+					</div>
+					
+					<div id="blockFloatText">
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('JustifyLeft');">  
+							<img src="source/leftAlign.png">
+						</button>
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('JustifyCenter');">
+							<img src="source/centerAlign.png">
+						</button>
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('JustifyRight');">
+							<img src="source/rightAlign.png">
+						</button>
+					</div>
+					
+					<div id="blockNumberinglist">
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('InsertOrderedList');">
+							<img src="source/ol.png">
+						</button>
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('InsertUnorderedList');">
+							<img src="source/ul.png">
+						</button>
+					</div>
+										
+					<div id="blockAddElement">
+						<button class="controlElementEditoButton" onClick="enterLink();">
+							<img src="source/alias.png">
+						</button>
+						<button class="controlElementEditoButton" onClick="EditorExecCommand('unlink');">
+							<img src="source/unalias.png">
+						</button>
+						<button class="controlElementEditoButton" onClick="enterPicture();">
+							<img src="source/image.png">
+						</button>
+						<button class="controlElementEditoButton" onClick="enterTable();">
+							<img src="source/table.png">
+						</button>
+					</div>
+					
+					<div id="blockColorTextBackground">
+						<div>
+							<select class="controlElementEditorSelect" id="textColor" onchange="enterTextColor();">					  
+							</select>
+						</div>
+						
+						<div>
+							<select class="controlElementEditorSelect" id="backgroundColor" onchange="enterBackgroundColor();">
+							</select>
+						</div>
+					</div>
+				</div>
+				
+				<iframe id="newTextArea" name="newTextArea" contenteditable="true"></iframe>
+			</div>
+			
+			<div id="PopUpWindowAlias">
+				<div id="Alias">
+					<div class="label">
+						Enter Link
+					</div>
+					<div>
+						<input class="input" id="link" ></input>
+					</div>
+					
+					<div>
+						<button id="LOGIN_BUTTON" onclick="closeLink();">
+							GO
+						</button>
+					</div>
+				</div>
+				
+				<div id="Pictures">
+					<div class="label">
+						Enter Link Picture
+					</div>
+					<div>
+						<input class="input" id="pictureLink" ></input>
+					</div>
+					
+					<div>
+						<div class="input50" id="PicturesWidth">
+							<div class="label">
+								Width
+							</div>
+							<div>
+								<input class="input" type="number" id="pictureWidth" ></input>
+							</div>
+						</div>
+						
+						<div class="input50" id="PicturesHeight">
+							<div class="label">
+								Height
+							</div>
+							<div>
+								<input class="input" type="number" id="pictureHeight" ></input>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<div class="input50" id="PicturesVertical">
+							<div class="label">
+								Vertical Space
+							</div>
+							<div>
+								<input class="input" type="number" id="pictureVertical" ></input>
+							</div>
+						</div>
+						
+						<div class="input50" id="PicturesGorizontal">
+							<div class="label">
+								Gorizontal Space
+							</div>
+							<div>
+								<input class="input" type="number" id="pictureGorizontal" ></input>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<div class="input50" id="PicturesBorder">
+							<div class="label">
+								Border width
+							</div>
+							<div>
+								<input class="input" type="number" id="pictureBorder" ></input>
+							</div>
+						</div>
+						
+						<div class="input50" id="PicturesRadius">
+							<div class="label">
+								Border radius
+							</div>
+							<div>
+								<input class="input" type="number" id="pictureRadius" ></input>
+							</div>
+						</div>
+					</div>
+					
+					<div class="label">
+						Style
+					</div>
+					<div>
+						<input class="input" id="pictureStyle" ></input>
+					</div>
+					
+					<div>
+						<button onclick="closeEnterPicture();">
+							GO
+						</button>
+					</div>
+				</div>
+				
+				<div id="Tables">
+					<div>
+						<div class="input50" id="TablesWidth">
+							<div class="label">
+								Column
+							</div>
+							<div>
+								<input class="input" type="number" id="tableWidth" ></input>
+							</div>
+						</div>
+						
+						<div class="input50" id="TablesHeight">
+							<div class="label">
+								Row
+							</div>
+							<div>
+								<input class="input" type="number" id="tableHeight" ></input>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<div class="input50" id="PicturesVertical">
+							<div class="label">
+								Vertical Space in cell
+							</div>
+							<div>
+								<input class="input" type="number" id="tableVertical" ></input>
+							</div>
+						</div>
+						
+						<div class="input50" id="PicturesGorizontal">
+							<div class="label">
+								Gorizontal Space in cell
+							</div>
+							<div>
+								<input class="input" type="number" id="tableGorizontal" ></input>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<div class="input50" id="PicturesBorder">
+							<div class="label">
+								Border width
+							</div>
+							<div>
+								<input class="input" type="number" id="tableBorder" ></input>
+							</div>
+						</div>
+						
+						<div class="input50" id="PicturesRadius">
+							<div class="label">
+								Border type
+							</div>
+							<div>
+								<select class="controlElementEditorSelect" id="tableBorderType">			
+									<option>solid</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<button сonclick="closeEnterTable();">
+							GO
+						</button>
+					</div>
+				</div>	
+			</div>
+			
+			<div id="newsCreationButton">
+				<div class="button" onclick="createNews();" >Создать новость</div>
+			</div>
+			
+			<div id="newsErrorLabel">
+				<div class="label" id="newsErrorLabelText"></div>
+			</div>
+		</div>
+	</body>
+</html>
