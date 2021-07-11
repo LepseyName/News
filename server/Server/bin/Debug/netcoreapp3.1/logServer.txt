@@ -1,0 +1,208 @@
+2021-03-18 18:45:03: 
+
+Log output initialize.
+2021-03-18 18:45:03: ServerData initialize good!
+2021-03-18 18:45:05: Authentication to host 'localhost' for user 'server' using method 'sha256_password' failed with message: Access denied for user 'server'@'localhost' (using password: YES)   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ContinueAuthentication(Byte[] data)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.HandleAuthChange(MySqlPacket packet)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Server.DataBase.Initialize(String nameServer, String nameDataBase, String Login, String Password, Func`2 logWriter) in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\DataBase.cs:line 26
+2021-03-18 18:45:05: DataBase(localhost/bntunews) not connect! Fatal Error! Server stopped!
+2021-03-18 19:24:57: 
+
+Log output initialize.
+2021-03-18 19:24:57: ServerData initialize good!
+2021-03-18 19:24:58: Authentication to host 'localhost' for user 'server' using method 'sha256_password' failed with message: Access denied for user 'server'@'localhost' (using password: YES)   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ContinueAuthentication(Byte[] data)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.HandleAuthChange(MySqlPacket packet)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Server.DataBase.Initialize(String nameServer, String nameDataBase, String Login, String Password, Func`2 logWriter) in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\DataBase.cs:line 26
+2021-03-18 19:24:58: DataBase(localhost/bntunews) not connect! Fatal Error! Server stopped!
+2021-03-18 19:32:34: 
+
+Log output initialize.
+2021-03-18 19:32:34: ServerData initialize good!
+2021-03-18 19:32:34: Authentication to host 'localhost' for user 'server' using method 'sha256_password' failed with message: Access denied for user 'server'@'localhost' (using password: YES)   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ContinueAuthentication(Byte[] data)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.HandleAuthChange(MySqlPacket packet)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Server.DataBase.Initialize(String nameServer, String nameDataBase, String Login, String Password, Func`2 logWriter) in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\DataBase.cs:line 26
+2021-03-18 19:32:34: DataBase(localhost/bntunews) not connect! Fatal Error! Server stopped!
+2021-03-18 19:33:00: 
+
+Log output initialize.
+2021-03-18 19:33:00: ServerData initialize good!
+2021-03-18 19:33:01: DataBase(localhost/bntunews) connect good!
+2021-03-18 19:33:01: Start initialize servers...
+2021-03-18 19:33:01: ports: 1300, 2700, 23451
+2021-03-18 19:33:01: Run servers...
+2021-03-18 19:33:01: Start Server on port: 2700
+2021-03-18 19:33:01: Start Server on port: 1300
+2021-03-18 19:33:01: Start Server on port: 23451
+2021-03-18 19:35:08: 
+
+Log output initialize.
+2021-03-18 19:35:08: ServerData initialize good!
+2021-03-18 19:35:08: DataBase(localhost/bntunews) connect good!
+2021-03-18 19:35:08: Start initialize servers...
+2021-03-18 19:35:08: ports: 1300, 2700, 23451
+2021-03-18 19:35:08: Run servers...
+2021-03-18 19:35:08: Start Server on port: 23451
+2021-03-18 19:35:08: Start Server on port: 1300
+2021-03-18 19:35:08: Start Server on port: 2700
+2021-03-18 19:38:23: 
+
+Log output initialize.
+2021-03-18 19:38:23: ServerData initialize good!
+2021-03-18 19:38:24: DataBase(localhost/bntunews) connect good!
+2021-03-18 19:38:24: Start initialize servers...
+2021-03-18 19:38:24: ports: 1300, 2700, 23451
+2021-03-18 19:38:24: Run servers...
+2021-03-18 19:38:24: Start Server on port: 1300
+2021-03-18 19:38:24: Start Server on port: 2700
+2021-03-18 19:38:24: Start Server on port: 23451
+2021-03-18 19:38:38: message: ALL_NEWS|sepSEP|ALL|sepSEP|TIME|sepSEP|10|sepSEP|0
+2021-03-18 19:38:44: message: NEWS|sepSEP|6
+2021-03-18 19:39:03: message: LOGIN|sepSEP|firstAdmin|sepSEP|firstAdminPassword
+2021-03-18 19:39:09: message: ALL_MY_NEWS|sepSEP|f458ed200031b830a8c4223a4ccf4443|sepSEP|ALL|sepSEP|TIME|sepSEP|10|sepSEP|0|sepSEP|false
+2021-03-18 19:39:17: message: NEWS|sepSEP|10
+2021-03-18 19:39:18: message: LOGIN|sepSEP|1234HER_TOBY|sepSEP|hyi_tam_plaval
+2021-03-18 19:39:22: message: LOGIN|sepSEP|1234HER_TOBY|sepSEP|hyi_tam_plaval
+2021-03-18 19:39:36: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 19:40:09: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 19:49:25: message: ALL_NEWS|sepSEP|ALL|sepSEP|TIME|sepSEP|10|sepSEP|0
+2021-03-18 19:49:26: message: NEWS|sepSEP|9
+2021-03-18 19:50:23: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 19:50:26: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 19:51:50: message: ALL_NEWS|sepSEP|ALL|sepSEP|TIME|sepSEP|10|sepSEP|0
+2021-03-18 19:51:51: message: NEWS|sepSEP|9
+2021-03-18 19:51:58: message: NEWS|sepSEP|8
+2021-03-18 19:52:49: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 19:52:58: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 19:56:09: message: ALL_NEWS|sepSEP|ALL|sepSEP|TIME|sepSEP|10|sepSEP|0
+2021-03-18 19:56:11: message: NEWS|sepSEP|7
+2021-03-18 19:56:26: message: COMPLAINT|sepSEP|7|sepSEP|fewfwf@gmail.com|sepSEP||sepSEP|
+2021-03-18 19:56:26: Error: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt64(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt64(String value)
+   at Server.Client.onMessage(Byte[] Message) in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 275
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 111
+2021-03-18 19:56:57: message: COMPLAINT|sepSEP|7|sepSEP|fewfwf@gmail.com|sepSEP|5555|sepSEP|
+2021-03-18 19:56:57: Error: Input string was not in a correct format.
+   at System.Number.ThrowOverflowOrFormatException(ParsingStatus status, TypeCode type)
+   at System.Number.ParseInt64(ReadOnlySpan`1 value, NumberStyles styles, NumberFormatInfo info)
+   at System.Convert.ToInt64(String value)
+   at Server.Client.onMessage(Byte[] Message) in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 275
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 111
+2021-03-18 19:57:07: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 19:58:50: message: COMPLAINT|sepSEP|7|sepSEP|fewfwf@gmail.com|sepSEP|5555|sepSEP|5555
+2021-03-18 20:01:41: message: COMPLAINT|sepSEP|7|sepSEP|fewfwf@gmail.com|sepSEP|5555|sepSEP|5555
+2021-03-18 20:01:41: message: COMPLAINT|sepSEP|7|sepSEP|fewfwf@gmail.com|sepSEP|5555|sepSEP|5555
+2021-03-18 20:01:51: message: COMPLAINT|sepSEP|7|sepSEP|fewfwf@gmail.com|sepSEP|5555|sepSEP|5555
+2021-03-18 20:01:58: message: COMPLAINT|sepSEP|7|sepSEP|fewfwf@gmail.com|sepSEP|5555|sepSEP|5555
+2021-03-18 20:02:41: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 20:02:58: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 20:03:18: message: LOGIN|sepSEP|firstAdmin|sepSEP|firstAdminPassword
+2021-03-18 20:03:22: message: ALL_MY_NEWS|sepSEP|761a97e89e71c8db31c3de1cf67a97e1|sepSEP|ALL|sepSEP|TIME|sepSEP|10|sepSEP|0|sepSEP|false
+2021-03-18 20:03:25: message: COMPLAINT|sepSEP|8|sepSEP|undefined
+2021-03-18 20:04:25: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 20:10:05: StopListner Server on port: 1300
+2021-03-18 20:10:05: StopAllClient Server on port: 1300
+2021-03-18 20:10:05: StopListner Server on port: 2700
+2021-03-18 20:10:05: StopAllClient Server on port: 2700
+2021-03-18 20:10:05: StopListner Server on port: 23451
+2021-03-18 20:10:05: StopAllClient Server on port: 23451
+2021-03-18 20:10:05: Stop  Server on port: 1300
+2021-03-18 20:10:05: Stop  Server on port: 2700
+2021-03-18 20:10:05: Stop  Server on port: 2700
+2021-03-18 20:10:05: Stop  Server on port: 23451
+2021-03-18 20:34:49: 
+
+Log output initialize.
+2021-03-18 20:34:49: ServerData initialize good!
+2021-03-18 20:34:50: DataBase(localhost/bntunews) connect good!
+2021-03-18 20:34:50: Start initialize servers...
+2021-03-18 20:34:50: ports: 1300, 2700, 23451
+2021-03-18 20:34:50: Run servers...
+2021-03-18 20:34:50: Start Server on port: 23451
+2021-03-18 20:34:50: Start Server on port: 2700
+2021-03-18 20:34:50: Start Server on port: 1300
+2021-03-18 20:35:02: message: ALL_NEWS|sepSEP|ALL|sepSEP|TIME|sepSEP|10|sepSEP|0
+2021-03-18 20:35:26: message: ALL_NEWS|sepSEP|ALL|sepSEP|TIME|sepSEP|10|sepSEP|0
+2021-03-18 20:35:30: message: LOGIN|sepSEP|firstAdmin|sepSEP|firstAdminPassword
+2021-03-18 20:35:32: message: ALL_MY_NEWS|sepSEP|404e6822e9a7a42249d992f9be00b244|sepSEP|ALL|sepSEP|TIME|sepSEP|10|sepSEP|0|sepSEP|false
+2021-03-18 20:35:34: message: COMPLAINT|sepSEP|8|sepSEP|404e6822e9a7a42249d992f9be00b244
+2021-03-18 20:35:58: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 20:36:02: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 20:36:24: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-03-18 20:36:34: Error: Unable to read data from the transport connection: Попытка установить соединение была безуспешной, т.к. от другого компьютера за требуемое время не получен нужный отклик, или было разорвано уже установленное соединение из-за неверного отклика уже подключенного компьютера..
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at Server.Client.Start() in C:\Users\LName\Documents\myProject\bntu_news\server\Server\Server\Client.cs:line 83
+2021-07-11 13:50:25: 
+
+Log output initialize.
+2021-07-11 13:50:25: ServerData initialize good!
+2021-07-11 13:50:26: DataBase(localhost/bntunews) connect good!
+2021-07-11 13:50:26: Start initialize servers...
+2021-07-11 13:50:26: ports: 1300, 2700, 23451
+2021-07-11 13:50:26: Run servers...
+2021-07-11 13:50:26: Start Server on port: 1300
+2021-07-11 13:50:26: Start Server on port: 2700
+2021-07-11 13:50:26: Start Server on port: 23451

@@ -1,0 +1,11 @@
+base_path_image = C:\openserver\domains\lepseyNews.com\_data\photo
+data_base_adress  = localhost
+data_base_name = bntunews
+data_base_login   = server1
+data_base_password= q4A5dEltA
+general_port    = 2345
+all_port_users  = 1300
+all_port_editors= 2700
+all_port_admins = 23451
+log_file_name  = logServer.txt
+server_initiale= server_init.txt
