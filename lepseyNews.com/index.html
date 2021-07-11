@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>LepseyNews</title>
+		<link rel="shortcut icon" href="source/icon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/newsSmallStyle.css">
+		<link rel="stylesheet" href="styles/fullNewsStyle.css">
+		<script type="text/javascript" src="scripts/general.js"></script>
+		<script type="text/javascript" src="scripts/serverScript.js"></script>
+		<script type="text/javascript" src="scripts/animationScript.js"></script>
+		<script type="text/javascript" src="scripts/smallNews.js"></script>
+		<script type="text/javascript" src="scripts/fullNews.js"></script>
+		<script type="text/javascript" src="scripts/mdScript.js"></script>
+		<script type="text/javascript" src="scripts/general.js"></script>
+		<script type="text/javascript" src="scripts/rsa.js"></script>
+		<script type="text/javascript" src="scripts/rng.js"></script>
+		<script type="text/javascript" src="scripts/jsbn.js"></script>
+		<script type="text/javascript" src="scripts/indexOnload.js"></script>
+		
+	</head>
+	<body>
+		<div id="header">
+			<div id="headerName">
+				<h1>LepseyNews</h1>
+			</div>
+			<div id="headerLogin">
+				<img id="headerLoginImg" src="source/inputLogin.png" alt="Entering">
+			</div>
+		</div>
+		
+		
+		<div id="smallNews">
+			<div id="categorie">
+				<div class="label">Категории</div>
+				<div class="radioButton" id="ALL">Все</div>
+				<div class="radioButton" id="POLITICS">Политика</div>
+				<div class="radioButton" id="ECONOMY">Экономика</div>
+				<div class="radioButton" id="SPORT">Спорт</div>
+				<div class="radioButton" id="SOCIETY">Общество</div>
+			</div>
+			<div id="middle">
+				<div id="sort">			
+					<div class="label">Сортировка: </div>
+					<div class="radioButton" id="POPULARITY">Популярность </div>
+					<div class="radioButton" id="IMPORTANCE">Важность </div>
+					<div class="radioButton" id="TIME">Время</div>
+				</div>
+				<div id="newsFeed">
+					<!--<div class="newsSmall" >
+						<div class=" newsSmallEditorsButtons"> 
+							<div class="button" onclick="deleteMyNews(1)">удалить</div>
+							<div class="button" onclick="editorMyNews(1)">Редактировать</div>
+							<div class="button" onclick="complaintsMyNews(1)">Жалобы</div>
+						</div>
+						<div class=" newsSmallName"> Новая новость)</div>
+						<div class=" newsSmallDescription">
+							какя-то новость о порнухе в нашем любимом универе - ГГНТУ...
+							В помещениях нашей шараги были найдены они - ...
+						</div>
+						<div class=" newsSmallImage"> <img src="_data/photo/BNTU.jpg"></div>
+						<div class=" newsSmallViews"> <img src="source/views.png"> 666</div>
+						<div class=" newsSmallNameComplaint">пожаловаться</div>
+					</div>-->
+					<!--<div class="editSmall" onclick="">
+						<div class="editSmallImage"> <img src="_data/photo/BNTU.jpg"></div>
+						<div class="editSmallName"> Новая новость)</div>
+						<div class="editSmallNews">News 12</div>
+						<div class="editSmallNews">Admins 12</div>
+						<div class="editSmallEditorsButtons"> 
+							<div class="button" onclick="">удалить</div>
+							<div class="button" onclick="">Редактировать</div>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<div id="add">
+				<p>Здесь будет ваша реклама</p>
+			</div>
+			<div id="EditorAndAdminInterface">
+				<div class="radioButton" id="AllNews">Все новости</div>
+				<div class="radioButton" id="MyNews">
+					<div>Мои новости</div>
+					<image class="imageInRadioButton" src="source/addButton.png" alt="add" onclick="window.open('editor.html')">
+				</div>
+				<div class="radioButton" id="MyEditors">
+					<div onclick="getEditors(false);">Мои редакторы</div>
+					<image class="imageInRadioButton" src="source/addButton.png" alt="add" onclick="window.open('user.html')">
+				</div>
+				<div class="radioButton" id="MyAdmins">
+					<div onclick="getEditors(true);">Мои админы</div>
+					<image class="imageInRadioButton" src="source/addButton.png" alt="add" onclick="window.open('user.html')">
+					</div>
+			</div>
+		
+		</div>
+		
+		<div id="Complaints">
+			<div id="infoC">
+				<div id="nameNewsC">
+					<p>FullName</p>
+				</div>
+				<div id="infoTypeC"> 
+					<p>type</p>
+				</div>
+				<div id="infoViewsC">
+					<p>666</p>
+				</div>
+				<div id="infoDescriptionC">
+					<p>10.10.2020</p>
+				</div>
+				<div id="infoBack">
+					<div id="" class="button" onclick="closeShowComplaints();">Вернуться назад</div>
+				</div>
+			</div>
+			<div id="middle">
+				<div id="complaintsFeed">
+					<!--<div class="complaintSmall" >
+						<div class="radioButton">удалит</div>
+						<div class="complaintName"> Новая новость)</div>
+						<div class="complaintDescription">
+							какя-то новость о порнухе в нашем любимом универе - ГГНТУ...
+							В помещениях нашей шараги были найдены они - ...
+						</div>
+					</div>-->
+				</div>
+			</div>		
+		</div>
+		
+		<div id="LOGIN_B">
+			<div id="LOGIN">
+				<div class="label" id="errorLoginMessage">
+					
+				</div>
+				<div class="label">
+					Login
+				</div>
+				<div>
+					<input class="input" id="login" value="firstAdmin"></input>
+				</div>
+				<div class="label">
+					Password
+				</div>
+				<div>
+					<input class="input" id="password" type="password" value="firstAdminPassword"></input>
+				</div>
+				
+				<div>
+					<button id="LOGIN_BUTTON" onclick="logIn()">
+						GO
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<div id="UserInfo">
+			<div id="UserInfoData">
+				<div class="label" id="UserInfoIsAdmin"></div>
+
+				<div>
+					<div id="UserInfoImg"> <img id="UserInfoImgSrc" src="" alt="ava"></div>
+					<div class="label" id="UserInfoName"></div>
+				</div>
+				
+				<div>
+					<button id="LOGOUT_BUTTON" onclick="logOut()">
+						выйти
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="fullNews">
+			<div id="info">
+				<div id="infoCreater">
+					<img src="_data/ava/ava1.jpeg"> 
+					<p>FullName</p>
+				</div>
+				<div id="infoType">
+					<img src="source/type.png"> 
+					<p>type</p>
+				</div>
+				<div id="infoViews">
+					<img src="source/views.png"> 
+					<p>666</p>
+				</div>
+				<div id="infoData">
+					<img src="source/datetime.png">
+					<p>10.10.2020</p>
+				</div>
+				<div id="infoComplaint">
+					<img src="source/Complaint.png">
+					<div id="infoComplaintButton" class="button">Жалоба</div>
+				</div>
+				<div id="infoBack">
+					<img src="source/Complaint.png">
+					<div id="" class="button backButton">Вернуться назад</div>
+				</div>
+			</div>
+			
+			<div id="news">
+				<!--<div id="newsHeader" style="background-image: url(_data/photo/BNTU.jpg);"> fack facked</div>
+				<div id="newsText"> Как правило, тестирование структ
+
+				</div>		
+				<div id="backButton" class="button backButton">Вернуться назад</div>-->
+			</div>
+			
+			<div id="add">Здесь будет ваша реклама</div>
+			
+			<div id="complaint">
+				<div >
+					<div id="complaintStatus"></div>
+				</div>
+				<div >
+					<div class="label W3">Email</div>
+					<input class="input" id="complaintEmail">
+				</div>
+				<div >
+					<div class="label W3">Ваше имя</div>
+					<input class="input" id="complaintName">
+				</div>
+				<div id="complaintText">
+					<div class="label">Опишите Жалобу</div>
+					<div class="complaintFullInput"><textarea id="complaintText_"></textarea></div>
+				</div>
+				<div id="complaintButton" class="button" onclick="createComplaint()">Жаловаться</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<table>
+				<tr>
+					<td>Special for GGNTU</td>
+					<td>LepseyName</td>
+					<td>2020</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

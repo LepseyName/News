@@ -1,0 +1,147 @@
+#fullNews{
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	margin: 0;
+	padding: 0;	
+	display: none;
+}
+
+#info, #infoC{
+	width: 20%;
+	background: white;
+	float: left;
+	margin: 0;
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+	padding:10px;
+	border: none;
+	border-left: 0.1em solid black ;
+	border-radius: 0;
+}
+
+#info div, #infoC div{
+	display: inline-block;
+	width: 90%;
+	clear: both;
+	margin: 0.5em;
+	float: left;
+}
+
+#info p, #infoC p{
+	margin-top: 9%;
+}
+
+#info img, #infoC img{
+	margin:0.7em;
+	padding: 0;
+	width: 15%;
+	float: left;
+	border: none;
+	border-radius: 100%;
+}
+
+#infoComplaintButton{
+	width:45% !important;
+	clear: none !important;
+}
+
+#infoBack .button{
+	width:45% !important;
+	clear: none !important;
+}
+
+#news{
+	width:60%;
+	float:left;
+	margin: 0;
+	padding: 10px;
+	margin-bottom: 2em;
+}
+
+#newsHeader{
+	display: flex;
+	width:90%;
+	min-height: 100px;
+	max-height: 150px;
+	float:left;
+	margin: 0;
+	padding: 10px;
+	background-size:100% 100%;
+	font: bold 200% ubuntu-mono;
+	color: white;
+	text-align: center;
+	vertical-align:bottom;
+	align-items: flex-end;
+}
+
+#newsText{
+	width:90%;
+	min-height: 100px;
+	float:left;
+	margin: 0;
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border-top: 0.1em solid black;
+}
+
+#complaint{
+	display: none;
+	width:40%;
+	float:left;
+	margin: 0;
+	margin-left: 25%;
+	border: 3px solid black;
+	border-radius: 1em;
+	padding: 10px;
+	margin-bottom: 2em;
+}
+
+#complaintStatus{
+	display:none;
+	width:90%;
+	margin: auto;
+	color:white;
+	background-color: blue;
+}
+
+#complaint input{
+	
+}
+
+
+#complaintText div{
+	width:95% !important;
+	margin: 0.3em;
+	
+	padding: 10px;
+}
+
+#complaintText textarea{
+	width:96%;
+	height: 10em;
+	resize: none;
+	border: 1px solid blue;
+	border-radius: 1em;
+	margin: 0;
+	padding: 0.5em;
+}
+
+#complaintButton{
+	width: 20%;
+	margin-left: 40%;
+	float: left;
+}
+
+
+
+.complaintSmallInput{
+	width: 80%;
+	float:right;
+}
+
+
+
+
+#add{
+}
